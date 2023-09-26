@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import HomeSection from './components/HomeSection'
 import AboutSection from './components/AboutSection'
 import TeleHealth from './components/TeleHealth'
+import InsuranceSection from './components/InsuranceSection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
       <HomeSection/>
       <AboutSection/>
       <TeleHealth/>
+      <InsuranceSection/>
     </div>
   )
 }

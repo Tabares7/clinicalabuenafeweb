@@ -5,7 +5,7 @@ const Title = ({title, subtitle}) => {
     <>
     {subtitle ? 
     <div className='flex flex-col items-center justify-center'>
-      <h3 className='text-sm font-normal text-lightblue'>{subtitle}</h3>
+      <h3 className='text-md font-normal text-lightblue'>{subtitle}</h3>
       <h1 className='text-4xl font-bold text-darkblue'>{title}</h1>
     </div> : 
     <div className='flex flex-col'>
