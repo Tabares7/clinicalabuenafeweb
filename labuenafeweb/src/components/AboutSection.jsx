@@ -17,9 +17,9 @@ const AboutSection = () => {
             <p> Libero, vel blanditiis quis illum ducimus aliquam, dicta ipsa cupiditate, magni iste eveniet officiis fugit eos! Iste deleniti corrupti enim explicabo. Error quos eum quaerat ex suscipit, cum nulla tempora voluptates architecto animi iure facilis voluptate nihio repellat iure consequatur aut minima ipsum aliquam!</p>
             
             <div className="flex gap-5">
-            <SiFacebook className='h-8 w-8 text-lightblue'/>
-            <SiInstagram className='h-8 w-8 text-lightblue'/>
-            <SiTiktok className='h-8 w-8 text-lightblue'/>
+            <SiFacebook className='h-8 w-8 text-lightblue hover:text-darkblue'/>
+            <SiInstagram className='h-8 w-8 text-lightblue hover:text-darkblue'/>
+            <SiTiktok className='h-8 w-8 text-lightblue hover:text-darkblue'/>
             </div>
         </div>
         </section>
