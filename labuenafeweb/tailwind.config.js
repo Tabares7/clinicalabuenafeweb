@@ -13,6 +13,7 @@ export default {
         yellow100: "#FFDA73"
       },
       fontWeight:{
+        'poppins-200': '200',
         'poppins-400': '400',
         'poppins-500': '500',
         'poppins-600': '600',

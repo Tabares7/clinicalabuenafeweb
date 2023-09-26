@@ -5,7 +5,7 @@ const ButtonFill = ({ text, url }) => {
     // Boton relleno generico
     <a
       href={url}
-      class="rounded-full bg-yellow text-darkblue px-3.5 py-2.5 text-sm  font-poppins-600 shadow-sm hover:bg-yellow100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+      className="rounded-full bg-yellow text-darkblue px-3.5 py-2.5 text-sm  font-poppins-600 shadow-sm hover:bg-yellow100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
     >
       {text}
     </a>
