@@ -5,6 +5,8 @@ import './App.css'
 import Title from './components/Title'
 import Navbar from './components/Navbar'
 import HomeSection from './components/HomeSection'
+import AboutSection from './components/AboutSection'
+import TeleHealth from './components/TeleHealth'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +15,8 @@ function App() {
     <div className='lg:px-40'>
       <Navbar/>
       <HomeSection/>
-      <div className='h-10 bg-red-400'></div>
+      <AboutSection/>
+      <TeleHealth/>
     </div>
   )
 }

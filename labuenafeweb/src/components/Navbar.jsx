@@ -114,7 +114,7 @@ export default function Example() {
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <ButtonOut text='Hacer cita' url='#'/>
+          <ButtonOut text='Haz una cita' url='#'/>
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -182,7 +182,7 @@ export default function Example() {
                 </a>
               </div>
               <div className="py-6">
-              <ButtonOut text='Hacer cita' url='#'/>
+              <ButtonOut text='Haz una cita' url='#'/>
               </div>
             </div>
           </div>

@@ -18,7 +18,10 @@ export default {
         'poppins-500': '500',
         'poppins-600': '600',
         'poppins-800': '800',
-      }
+      },
+      animation: {
+        'moveUpDown': 'moveUpDown 1s infinite',
+      },
     },
     fontFamily: {
       'poppins': ['Poppins', 'sans-serif'],
