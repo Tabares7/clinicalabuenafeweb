@@ -10,6 +10,7 @@ import TeleHealth from './components/TeleHealth'
 import InsuranceSection from './components/InsuranceSection'
 import BlogSection from './components/BlogSection'
 import Services from './components/Services'
+import Contact from './components/Contact'
 
 const posts = [
   {
@@ -47,6 +48,7 @@ function App() {
       <InsuranceSection/>
       <BlogSection posts={posts}/>
       <Services/>
+      <Contact/>
     </div>
   )
 }
