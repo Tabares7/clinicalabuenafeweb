@@ -7,7 +7,7 @@ import ButtonFill from "./ButtonFill";
 
 const TeleHealth = () => {
   return (
-    <section className="bg-cyan-50 mt-16 flex flex-col gap-10 p-16 items-center">
+    <section className=" bg-gradient-to-b from-white to-cyan-300 rounded-xl shadow-xl shadow-cyan-100 mt-16 flex flex-col gap-10 p-16 items-center">
       <Title title="¡Desde Tu Casa!" subtitle="Consulta" />
       <div className="flex lg:flex-row items-center">
         <img src={conecta} alt="Paciente con telefono" className="w-1/2" />
