@@ -38,7 +38,7 @@ export default function Example() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img className="h-10 w-auto" src={logo} alt="" />
+            <img className="h-20 w-auto" src={logo} alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -123,7 +123,7 @@ export default function Example() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Clinica Familiar La Buena Fe</span>
-              <img className="h-10 w-auto" src={logo} alt="CLinica Logo" />
+              <img className="h-16" src={logo} alt="CLinica Logo" />
             </a>
             <button
               type="button"

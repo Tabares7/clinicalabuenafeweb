@@ -11,6 +11,8 @@ import InsuranceSection from './components/InsuranceSection'
 import BlogSection from './components/BlogSection'
 import Services from './components/Services'
 import Contact from './components/Contact'
+import ImgSpacer from './components/ImgSpacer'
+import bgspacer from "./assets/img/bg-spacer-1.png"
 
 const posts = [
   {
@@ -40,15 +42,21 @@ function App() {
   
 
   return (
-    <div className='px-16 lg:px-40 bg-cyan-50'>
+    <div className=' '>
+      <div className="px-16 lg:px-40">
       <Navbar/>
       <HomeSection/>
-      <AboutSection/>
+      </div>
+      <div className="my-20"></div>
+   <ImgSpacer imageUrl={bgspacer} text="La Salud, Nuestro Deber" />
+      <div className="px-16 lg:px-40">
       <TeleHealth/>
+      <Services/>
       <InsuranceSection/>
       <BlogSection posts={posts}/>
-      <Services/>
+      <AboutSection/>
       <Contact/>
+      </div>
     </div>
   )
 }

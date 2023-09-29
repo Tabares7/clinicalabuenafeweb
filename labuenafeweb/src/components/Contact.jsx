@@ -196,7 +196,7 @@ export default function Contact() {
             <button
               disabled={state.submitting}
               type="submit"
-              className="block w-full rounded-md bg-darkblue px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-lightblue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="block w-full shadow-xl shadow-blue-200 rounded-full bg-darkblue px-3.5 py-2.5 text-center text-sm font-semibold text-white  hover:bg-lightblue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Let's talk
             </button>

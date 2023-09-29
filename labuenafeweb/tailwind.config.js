@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       colors:{
-        darkblue: "#001A80",
+        darkblue: "#0062FF",
         lightblue: "#00CDFF",
         yellow: "#FFE800",
         yellow100: "#FFDA73"

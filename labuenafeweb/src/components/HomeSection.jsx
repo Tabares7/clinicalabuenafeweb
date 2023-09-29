@@ -27,7 +27,7 @@ const HomeSection = () => {
         <div className="flex gap-5 items-center">
           <ButtonFill text="Haz una Cita" url="#" />
           <ButtonFill text="Llamanos" url="tel:+14695864574" />
-          <span className="font-poppins-400 italic text-lightblue text-xs">
+          <span className="font-poppins-400 italic text-yellow text-xs">
             Ponte en contacto con nosotros
           </span>
         </div>
