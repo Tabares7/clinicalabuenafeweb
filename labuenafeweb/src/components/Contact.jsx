@@ -31,7 +31,7 @@ export default function Contact() {
   }
 
   return (
-    <section className="flex lg:flex-row items-center">
+    <section id="contact" className="flex lg:flex-row items-center">
       <div className="w-1/2">
         <img src={home} alt="Imagen doctores" className="w-full" />
       </div>

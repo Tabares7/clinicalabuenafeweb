@@ -5,7 +5,7 @@ import {SiFacebook, SiInstagram, SiTiktok} from 'react-icons/si'
 
 const AboutSection = () => {
   return (
-    <section className='flex lg:flex-row lg:pt-10 items-center gap-16'>
+    <section id='about' className='flex lg:flex-row lg:pt-10 items-center gap-16'>
         {/* //? IMG  */}
         <div className="w-1/2">
         <img src={about} alt="Imagen doctores" className="" />

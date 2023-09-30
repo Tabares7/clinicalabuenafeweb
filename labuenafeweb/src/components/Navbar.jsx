@@ -1,17 +1,11 @@
-import { Fragment, useState } from 'react'
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-import logo from '../assets/img/logo.png'
-import ButtonOut from './ButtonOut'
+import React, { useState } from 'react';
+import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react';
+import { ArrowPathIcon, Bars3Icon, ChartPieIcon, CursorArrowRaysIcon, FingerPrintIcon, SquaresPlusIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
+import logo from '../assets/img/logo.png';
+import ButtonOut from './ButtonOut';
+import { Fragment } from 'react';
+
 
 const products = [
   { name: 'Servicios', description: 'Échale un vistazo a como podemos ayudarte', href: '#', icon: ChartPieIcon },
@@ -19,25 +13,26 @@ const products = [
   { name: 'Telemedicina', description: 'Ten tu consulta desde casa', href: '#', icon: FingerPrintIcon },
   { name: 'Sobre Nosotros', description: 'Conece un poco más sobre nosotros', href: '#', icon: SquaresPlusIcon },
   { name: 'Contacto', description: 'Conecta con nosotros ya mismo', href: '#', icon: ArrowPathIcon },
-]
+];
 const callsToAction = [
   { name: 'Haz una cita', href: '#', icon: PlayCircleIcon },
   { name: 'Llámanos', href: '#', icon: PhoneIcon },
-]
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+];
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Función para cerrar el menú móvil
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
 
   return (
     <header className="bg-white">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+          <a href="#" className="-m-1.5 p-1.5" onClick={closeMobileMenu}>
+            <span className="sr-only">Clinica Familiar La Buena Fe</span>
             <img className="h-20 w-auto" src={logo} alt="" />
           </a>
         </div>
@@ -57,7 +52,6 @@ export default function Example() {
               Product
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
-
             <Transition
               as={Fragment}
               enter="transition ease-out duration-200"
@@ -78,9 +72,8 @@ export default function Example() {
                         <item.icon className="h-6 w-6 text-lightblue group-hover:text-darkblue" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
-                        <a href={item.href} className="block font-semibold text-darkblue">
+                        <a href={item.href} className="block font-semibold text-darkblue" onClick={closeMobileMenu}>
                           {item.name}
-                          <span className="absolute inset-0" />
                         </a>
                         <p className="mt-1 text-gray-600">{item.description}</p>
                       </div>
@@ -93,6 +86,7 @@ export default function Example() {
                       key={item.name}
                       href={item.href}
                       className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-darkblue hover:bg-cyan-50"
+                      onClick={closeMobileMenu}
                     >
                       <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
                       {item.name}
@@ -102,34 +96,28 @@ export default function Example() {
               </Popover.Panel>
             </Transition>
           </Popover>
-
-          <a href="#" className="text-sm font-semibold leading-6 text-darkblue">
+          <a href="#services" className="text-sm font-semibold leading-6 text-darkblue" onClick={closeMobileMenu}>
             Features
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-darkblue">
+          <a href="#" className="text-sm font-semibold leading-6 text-darkblue" onClick={closeMobileMenu}>
             Marketplace
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-darkblue">
+          <a href="#" className="text-sm font-semibold leading-6 text-darkblue" onClick={closeMobileMenu}>
             Company
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <ButtonOut text='Haz una cita' url='#'/>
+          <ButtonOut text='Haz una cita' url='#' onClick={closeMobileMenu} />
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-        <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="#" className="-m-1.5 p-1.5" onClick={closeMobileMenu}>
               <span className="sr-only">Clinica Familiar La Buena Fe</span>
               <img className="h-16" src={logo} alt="CLinica Logo" />
             </a>
-            <button
-              type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
-              onClick={() => setMobileMenuOpen(false)}
-            >
+            <button type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700" onClick={closeMobileMenu}>
               <span className="sr-only">Close menu</span>
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
@@ -142,52 +130,35 @@ export default function Example() {
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50">
                         Product
-                        <ChevronDownIcon
-                          className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
-                          aria-hidden="true"
-                        />
+                        <ChevronDownIcon className={open ? 'rotate-180 h-5 w-5 flex-none' : 'h-5 w-5 flex-none'} aria-hidden="true" />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
                         {[...products, ...callsToAction].map((item) => (
-                          <Disclosure.Button
-                            key={item.name}
-                            as="a"
-                            href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-darkblue hover:bg-gray-50"
-                          >
+                          <a key={item.name} href={item.href} className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-darkblue hover:bg-gray-50" onClick={closeMobileMenu}>
                             {item.name}
-                          </Disclosure.Button>
+                          </a>
                         ))}
                       </Disclosure.Panel>
                     </>
                   )}
                 </Disclosure>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50"
-                >
+                <a href="#services" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50" onClick={closeMobileMenu}>
                   Features
                 </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50"
-                >
+                <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50" onClick={closeMobileMenu}>
                   Marketplace
                 </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50"
-                >
+                <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50" onClick={closeMobileMenu}>
                   Company
                 </a>
               </div>
               <div className="py-6">
-              <ButtonOut text='Haz una cita' url='#'/>
+                <ButtonOut text='Haz una cita' url='#' onClick={closeMobileMenu} />
               </div>
             </div>
           </div>
         </Dialog.Panel>
       </Dialog>
     </header>
-  )
+  );
 }

@@ -47,9 +47,10 @@ function App() {
       <Navbar/>
       <HomeSection/>
       </div>
-      <div className="my-20"></div>
+      <div className="my-20">
    <ImgSpacer imageUrl={bgspacer} text="La Salud, Nuestro Deber" />
-      <div className="px-16 lg:px-40">
+      </div>
+      <div className="px-16 lg:px-40 my-20">
       <TeleHealth/>
       <Services/>
       <InsuranceSection/>

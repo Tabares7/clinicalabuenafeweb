@@ -10,7 +10,7 @@ export default function App() {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   return (
-    <section className="my-20">
+    <section id="services" className="my-20">
     <Title title="¡Servicios!" subtitle="Nuestros"/>
     <div className="py-10">
     <Accordion selectionMode="multiple">

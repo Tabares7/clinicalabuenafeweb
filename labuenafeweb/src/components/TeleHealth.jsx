@@ -7,10 +7,10 @@ import ButtonFill from "./ButtonFill";
 
 const TeleHealth = () => {
   return (
-    <section className="rounded-xl  mt-16 flex flex-col gap-10 p-16 items-center">
+    <section id="telemedicina" className="rounded-xl flex flex-col gap-10 items-center p-32">
       <Title title="¡Desde Tu Casa!" subtitle="Consulta" />
       <div className="flex lg:flex-row items-center">
-        <img src={conecta} alt="Paciente con telefono" className="w-1/2" />
+        <img src={conecta} alt="Paciente con telefono" className="w-1/3" />
         <div className="flex flex-col gap-5 px-10">
           <h3 className="text-lg font-normal text-lightblue">Paso 1.</h3>
           <Title title="Accede a la sala vitual" />
@@ -31,10 +31,10 @@ const TeleHealth = () => {
             vitae eaque ipsum omnis?
           </p>
         </div>
-        <img src={info} alt="Imagen doctora toma notas" className="w-1/2" />
+        <img src={info} alt="Imagen doctora toma notas" className="w-1/3" />
       </div>
       <div className="flex lg:flex-row items-center">
-        <img src={consulta} alt="Consulta y tratamiento" className="w-1/2" />
+        <img src={consulta} alt="Consulta y tratamiento" className="w-1/3" />
         <div className="flex flex-col gap-5 px-10">
           <h3 className="text-lg font-normal text-lightblue">Paso 3.</h3>
           <Title title="Accede a la sala vitual" />

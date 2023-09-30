@@ -7,7 +7,7 @@ import { ChevronUpDownIcon } from "@heroicons/react/24/outline";
 
 const HomeSection = () => {
   return (
-    <section className="relative flex lg:flex-row lg:pt-10">
+    <section id="home" className="relative flex lg:flex-row lg:pt-10">
       {/* Seccion de texto */}
       <div className="mt-16 flex flex-col gap-10">
         {/* //? TITULO  */}

@@ -6,7 +6,7 @@ import bcbs from "../assets/img/bcbs-img.png";
 
 const InsuranceSection = () => {
   return (
-    <section className='my-16 py-10'>
+    <section id='insurances' className='my-16 py-10'>
         <Title title="¡Seguros Medicos!" subtitle="Aceptamos"/>
         <div className="flex md:flex-row gap-5 text-center my-10 py-10">
             <div className="flex flex-col items-center gap-8">

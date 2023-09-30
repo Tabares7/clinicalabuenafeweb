@@ -4,7 +4,7 @@ import ButtonFill from "./ButtonFill";
 
 const BlogSection = ({ posts }) => {
   return (
-    <section className="flex flex-col gap-5  px-40">
+    <section id="blog" className="flex flex-col gap-5  px-40">
         <Title title="¡Nuestro Blog!" subtitle="Entradas de"/>
       {posts.map((post, index) => (
         <div className="flex gap-5 rounded-xl bg-cyan-50 p-10 mt-5 items-center hover:bg-cyan-100 hover:cursor-pointer" key={index}>
