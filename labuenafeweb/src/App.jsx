@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -13,6 +13,7 @@ import Services from './components/Services'
 import Contact from './components/Contact'
 import ImgSpacer from './components/ImgSpacer'
 import bgspacer from "./assets/img/bg-spacer-1.png"
+import {BiSolidChevronsUp} from "react-icons/bi"
 
 const posts = [
   {
@@ -37,12 +38,32 @@ const posts = [
 ]
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Verifica la posición de scroll en el eje X
+      if (window.scrollY > 1000) {  // Ajusta el valor "100" según tus necesidades
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    // Agrega el event listener cuando el componente se monta
+    window.addEventListener('scroll', handleScroll);
+
+    // Limpia el event listener cuando el componente se desmonta
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   
 
   return (
-    <div className=' '>
+    <div className='relative'>
+        {isVisible && <a href='#' className="flex items-center fixed bottom-8 z-10 right-8 w-auto px-3 h-10 bg-darkblue text-white rounded-full font-poppins-600">Volver arriba <BiSolidChevronsUp/></a>}
       <div className="px-16 lg:px-40">
       <Navbar/>
       <HomeSection/>

@@ -8,11 +8,13 @@ import { Fragment } from 'react';
 
 
 const products = [
-  { name: 'Servicios', description: 'Échale un vistazo a como podemos ayudarte', href: '#', icon: ChartPieIcon },
-  { name: 'Blog', description: 'Mantente informado con nosotros', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Telemedicina', description: 'Ten tu consulta desde casa', href: '#', icon: FingerPrintIcon },
-  { name: 'Sobre Nosotros', description: 'Conece un poco más sobre nosotros', href: '#', icon: SquaresPlusIcon },
-  { name: 'Contacto', description: 'Conecta con nosotros ya mismo', href: '#', icon: ArrowPathIcon },
+  { name: 'Otorrinolaringologia', description: 'Conecta con nosotros ya mismo', href: '#services', icon: ArrowPathIcon },
+  { name: 'Sueros Vitaminados', description: 'Échale un vistazo a como podemos ayudarte', href: '#services', icon: ChartPieIcon },
+  { name: 'Programa de perdida de peso', description: 'Mantente informado con nosotros', href: '#services', icon: CursorArrowRaysIcon },
+  { name: 'Laboratorios', description: 'Conece un poco más sobre nosotros', href: '#services', icon: SquaresPlusIcon },
+  { name: 'Telemedicina', description: 'Ten tu consulta desde casa', href: '#services', icon: FingerPrintIcon },
+  { name: 'DOT', description: 'Conece un poco más sobre nosotros', href: '#services', icon: SquaresPlusIcon },
+  { name: 'Muchos más ', description: 'Conece un poco más sobre nosotros', href: '#services', icon: SquaresPlusIcon },
 ];
 const callsToAction = [
   { name: 'Haz una cita', href: '#', icon: PlayCircleIcon },
@@ -49,7 +51,7 @@ export default function Example() {
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-darkblue">
-              Product
+              Servicios Principales
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
             <Transition
@@ -96,14 +98,17 @@ export default function Example() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <a href="#services" className="text-sm font-semibold leading-6 text-darkblue" onClick={closeMobileMenu}>
-            Features
+          <a href="#insurances" className="text-sm font-semibold leading-6 text-darkblue" onClick={closeMobileMenu}>
+            Seguros
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-darkblue" onClick={closeMobileMenu}>
-            Marketplace
+          <a href="#telemedicina" className="text-sm font-semibold leading-6 text-darkblue" onClick={closeMobileMenu}>
+            Telemedicina
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-darkblue" onClick={closeMobileMenu}>
-            Company
+          <a href="#about" className="text-sm font-semibold leading-6 text-darkblue" onClick={closeMobileMenu}>
+            Nosotros
+          </a>
+          <a href="#contact" className="text-sm font-semibold leading-6 text-darkblue" onClick={closeMobileMenu}>
+            Contáctanos
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
