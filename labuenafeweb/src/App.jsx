@@ -64,8 +64,8 @@ function App() {
   return (
     <div className='relative'>
         {isVisible && <a href='#' className="flex items-center fixed bottom-8 z-10 right-8 w-auto px-3 h-10 bg-darkblue text-white rounded-full font-poppins-600">Volver arriba <BiSolidChevronsUp/></a>}
-      <div className="px-16 lg:px-40">
       <Navbar/>
+      <div className="px-8 lg:px-40">
       <HomeSection/>
       </div>
       <div className="my-20">
