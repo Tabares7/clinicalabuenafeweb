@@ -11,7 +11,7 @@ const AboutSection = () => {
         <img src={about} alt="Imagen doctores" className="" />
         </div>
         {/* //? TEXTO  */}
-        <div className="flex flex-col gap-10 w-3/4 items-center">
+        <div className="flex flex-col gap-10 w-3/4 ">
             <Title title="Sobre Nosotros"/>
             <p className='font-poppins-400'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum inventore fugiat ipsum et, perspiciatis ex dicta soluta. Natus maiores nobis odio tenetur atque maxime rem ducimus.  Placeat earum ipsum voluptatibus nostrum odit, qui officiis! Reiciendis perspiciatis porro mollitia beatae iure error voluptates!</p> 
             <p> Libero, vel blanditiis quis illum ducimus aliquam, dicta ipsa cupiditate, magni iste eveniet officiis fugit eos! Iste deleniti corrupti enim explicabo. Error quos eum quaerat ex suscipit, cum nulla tempora voluptates architecto animi iure facilis voluptate nihio repellat iure consequatur aut minima ipsum aliquam!</p>
