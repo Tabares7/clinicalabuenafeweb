@@ -71,7 +71,7 @@ function App() {
       <div className="my-20">
    <ImgSpacer imageUrl={bgspacer} text="La Salud, Nuestro Deber" />
       </div>
-      <div className="px-16 lg:px-40 my-20">
+      <div className="px-5 lg:px-40 my-20">
       <TeleHealth/>
       <Services/>
       <InsuranceSection/>

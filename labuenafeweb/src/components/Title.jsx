@@ -4,7 +4,7 @@ const Title = ({title, subtitle}) => {
   return (
     <>
     {subtitle ? 
-    <div className='flex flex-col items-center justify-center'>
+    <div className='flex flex-col items-center justify-center text-center'>
       <h3 className='text-md font-normal text-lightblue'>{subtitle}</h3>
       <h1 className='text-4xl font-bold text-darkblue'>{title}</h1>
     </div> : 
