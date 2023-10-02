@@ -13,8 +13,8 @@ const AboutSection = () => {
         {/* //? TEXTO  */}
         <div className="flex flex-col gap-10 w-3/4 ">
             <Title title="Sobre Nosotros"/>
-            <p className='font-poppins-400'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum inventore fugiat ipsum et, perspiciatis ex dicta soluta. Natus maiores nobis odio tenetur atque maxime rem ducimus.  Placeat earum ipsum voluptatibus nostrum odit, qui officiis! Reiciendis perspiciatis porro mollitia beatae iure error voluptates!</p> 
-            <p> Libero, vel blanditiis quis illum ducimus aliquam, dicta ipsa cupiditate, magni iste eveniet officiis fugit eos! Iste deleniti corrupti enim explicabo. Error quos eum quaerat ex suscipit, cum nulla tempora voluptates architecto animi iure facilis voluptate nihio repellat iure consequatur aut minima ipsum aliquam!</p>
+            <p className='font-poppins-400'> En la Clínica Familiar La Buena Fe, nuestra misión es brindar atención médica de calidad en un ambiente cálido y acogedor. Con años de experiencia en el campo de la salud, nuestro equipo de profesionales está dedicado a servir a la comunidad, ofreciendo tratamientos y servicios que promueven el bienestar integral de cada paciente. </p> 
+            <p> Nos enorgullece ser un referente en atención médica en la región, y nos esforzamos día a día para garantizar que cada visita a nuestra clínica sea una experiencia positiva y enriquecedora. Tu salud y bienestar son nuestra prioridad.</p>
             
             <div className="flex gap-5">
             <SiFacebook className='h-8 w-8 text-lightblue hover:text-darkblue'/>

@@ -14,7 +14,7 @@ const TeleHealth = () => {
         <img src={conecta} alt="Paciente con telefono" className="w-full lg:w-1/3" />
         <div className="flex flex-col gap-5 md:px-10">
           <h3 className="text-lg font-normal text-lightblue">Paso 1.</h3>
-          <h2 className="text-2xl md:text-3xl text-darkblue font-poppins-800">Accede a la sala vitual</h2>
+          <h2 className="text-2xl md:text-3xl text-darkblue font-poppins-800">Accede a la sala virtual</h2>
           <p>
           Accede a nuestra plataforma de telemedicina desde tu computadora, tablet o smartphone. Asegúrate de tener una conexión estable a internet y de permitir el acceso a tu cámara y micrófono para una comunicación fluida con nuestro equipo médico.
           </p>
@@ -44,7 +44,7 @@ const TeleHealth = () => {
       </div>
      
       <div className="animate-moveUpDown duration-500 ease-in-out">
-      <ButtonFill text="Consulta Ahora" url="https://www.youtube.com"/>
+      <ButtonFill text="Consulta Ahora" url="https://doxy.me/drmadepereza"/>
       </div>
     </section>
   );
