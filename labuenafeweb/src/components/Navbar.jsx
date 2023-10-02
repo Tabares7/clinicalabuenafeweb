@@ -134,7 +134,7 @@ export default function Example() {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50">
-                        Product
+                        Servicios
                         <ChevronDownIcon className={open ? 'rotate-180 h-5 w-5 flex-none' : 'h-5 w-5 flex-none'} aria-hidden="true" />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
@@ -147,14 +147,17 @@ export default function Example() {
                     </>
                   )}
                 </Disclosure>
-                <a href="#services" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50" onClick={closeMobileMenu}>
-                  Features
+                <a href="#insurances" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50" onClick={closeMobileMenu}>
+                  Seguros
                 </a>
-                <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50" onClick={closeMobileMenu}>
-                  Marketplace
+                <a href="#telemedicina" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50" onClick={closeMobileMenu}>
+                  Telemedicina
                 </a>
-                <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50" onClick={closeMobileMenu}>
-                  Company
+                <a href="#about" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50" onClick={closeMobileMenu}>
+                  Nosotros
+                </a>
+                <a href="#contacto" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50" onClick={closeMobileMenu}>
+                  Contáctanos
                 </a>
               </div>
               <div className="py-6">
