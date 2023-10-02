@@ -16,9 +16,7 @@ const TeleHealth = () => {
           <h3 className="text-lg font-normal text-lightblue">Paso 1.</h3>
           <h2 className="text-2xl md:text-3xl text-darkblue font-poppins-800">Accede a la sala vitual</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur porro accusantium corrupti quas voluptatem soluta quam
-            vitae eaque ipsum omnis?
+          Accede a nuestra plataforma de telemedicina desde tu computadora, tablet o smartphone. Asegúrate de tener una conexión estable a internet y de permitir el acceso a tu cámara y micrófono para una comunicación fluida con nuestro equipo médico.
           </p>
         </div>
       </div>
@@ -28,9 +26,7 @@ const TeleHealth = () => {
           <h3 className="text-lg font-normal text-lightblue">Paso 2.</h3>
           <h2 className="text-2xl md:text-3xl text-darkblue font-poppins-800">Danos algunos datos</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur porro accusantium corrupti quas voluptatem soluta quam
-            vitae eaque ipsum omnis?
+          Una vez dentro, completa el formulario con tu información personal y médica. Esta información es esencial para que podamos ofrecerte una atención personalizada y adecuada a tus necesidades. Recuerda que todos tus datos están protegidos y se manejan con la máxima confidencialidad.
           </p>
         </div>
         <img src={info} alt="Imagen doctora toma notas" className="w-full lg:w-1/3" />
@@ -42,9 +38,7 @@ const TeleHealth = () => {
           <h3 className="text-lg font-normal text-lightblue">Paso 3.</h3>
           <h2 className="text-2xl md:text-3xl text-darkblue font-poppins-800">Recibe tu consulta</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur porro accusantium corrupti quas voluptatem soluta quam
-            vitae eaque ipsum omnis?
+          Una vez que hayas proporcionado tus datos, serás conectado con uno de nuestros profesionales de salud. Durante la consulta, podrás discutir tus síntomas, hacer preguntas y recibir recomendaciones. Al finalizar, si es necesario, recibirás una receta o indicaciones para un seguimiento.
           </p>
         </div>
       </div>
