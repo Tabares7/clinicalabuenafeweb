@@ -17,8 +17,9 @@ const HomeSection = () => {
       {/* Texto */}
       <div className="mt-16 flex flex-col gap-10">
         {/* //? TITULO  */}
-        <h1 className="text-darkblue text-3xl md:text-5xl lg:text-7xl font-poppins-800 text-center md:text-left">
-          Tu Clínica Familiar de Confianza, La Buena Fe
+        <h1 className="text-darkblue text-3xl md:text-5xl lg:text-7xl font-poppins-600 text-center md:text-left">
+          Tu Clínica Familiar de Confianza, <span className="font-poppins-800 text-lightblue">La Buena Fe</span>
+
         </h1>
         {/* //? SUBTITULO  */}
         <div className="flex md:py-10 md:pr-32 gap-5  items-center">
@@ -31,11 +32,9 @@ const HomeSection = () => {
         </div>
         {/* //? CTA */}
         <div className="flex  gap-5">
-          <ButtonFill text="Haz una Cita" url="#" />
-          <ButtonFill text="Llamanos" url="tel:+14695864574" />
-          <span className="font-poppins-400 italic text-yellow text-xs  hidden md:block">
-            Ponte en contacto con nosotros
-          </span>
+          <ButtonFill text="Haz una Cita" url="https://provider.kareo.com/madelin-perez-antela" />
+          <ButtonFill text="Llámanos" url="tel:+14695864574" />
+          
         </div>
       </div>
       <div className="absolute -bottom-16 md:bottom-10 right-1/2 animate-moveUpDown duration-500 ease-in-out">

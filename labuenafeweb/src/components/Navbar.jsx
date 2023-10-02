@@ -1,6 +1,16 @@
 import React, { useState } from 'react';
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react';
 import { ArrowPathIcon, Bars3Icon, ChartPieIcon, CursorArrowRaysIcon, FingerPrintIcon, SquaresPlusIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import {BsEar, BsPhone, BsTruck} from "react-icons/bs"
+import {PiSyringe} from "react-icons/pi"
+import {LiaWeightSolid} from "react-icons/lia"
+import {GiCorkedTube, GiMedicalDrip, GiScalpel} from "react-icons/gi"
+import {FaHandHoldingMedical} from "react-icons/fa"
+import {MdOutlineChildCare} from "react-icons/md"
+
+
+
+
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
 import logo from '../assets/img/logo.png';
 import ButtonOut from './ButtonOut';
@@ -8,17 +18,21 @@ import { Fragment } from 'react';
 
 
 const products = [
-  { name: 'Otorrinolaringologia', description: 'Conecta con nosotros ya mismo', href: '#services', icon: ArrowPathIcon },
-  { name: 'Sueros Vitaminados', description: 'Échale un vistazo a como podemos ayudarte', href: '#services', icon: ChartPieIcon },
-  { name: 'Programa de perdida de peso', description: 'Mantente informado con nosotros', href: '#services', icon: CursorArrowRaysIcon },
-  { name: 'Laboratorios', description: 'Conece un poco más sobre nosotros', href: '#services', icon: SquaresPlusIcon },
-  { name: 'Telemedicina', description: 'Ten tu consulta desde casa', href: '#services', icon: FingerPrintIcon },
-  { name: 'DOT', description: 'Conece un poco más sobre nosotros', href: '#services', icon: SquaresPlusIcon },
+  { name: 'Otorrinolaringologia', description: 'Conecta con nosotros ya mismo', href: '#services', icon: BsEar },
+  { name: 'Sueros Vitaminados', description: 'Échale un vistazo a como podemos ayudarte', href: '#services', icon: GiMedicalDrip },
+  { name: 'Programa de Perdida de Peso', description: 'Mantente informado con nosotros', href: '#services', icon: LiaWeightSolid },
+  { name: 'Laboratorios', description: 'Conece un poco más sobre nosotros', href: '#services', icon: GiCorkedTube },
+  { name: 'Telemedicina', description: 'Ten tu consulta desde casa', href: '#services', icon: BsPhone },
+  { name: 'DOT', description: 'Conece un poco más sobre nosotros', href: '#services', icon: BsTruck },
+  { name: 'Medicina General', description: 'Conece un poco más sobre nosotros', href: '#services', icon: FaHandHoldingMedical},
+  { name: 'Vacunación', description: 'Conece un poco más sobre nosotros', href: '#services', icon: PiSyringe },
+  { name: 'Cirugía Menor', description: 'Conece un poco más sobre nosotros', href: '#services', icon: GiScalpel },
+  { name: 'Pediatría', description: 'Conece un poco más sobre nosotros', href: '#services', icon: MdOutlineChildCare },
   { name: 'Muchos más ', description: 'Conece un poco más sobre nosotros', href: '#services', icon: SquaresPlusIcon },
 ];
 const callsToAction = [
-  { name: 'Haz una cita', href: '#', icon: PlayCircleIcon },
-  { name: 'Llámanos', href: '#', icon: PhoneIcon },
+  { name: 'Haz una cita', href: 'https://provider.kareo.com/madelin-perez-antela', icon: PlayCircleIcon },
+  { name: 'Llámanos', href: 'tel:+14695864574', icon: PhoneIcon },
 ];
 
 export default function Example() {
@@ -68,16 +82,15 @@ export default function Example() {
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-cyan-100"
+                      className="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm leading-6 hover:bg-cyan-100"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-cyan-100 group-hover:bg-cyan-50">
-                        <item.icon className="h-6 w-6 text-lightblue group-hover:text-darkblue" aria-hidden="true" />
+                      <div className="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-cyan-100 group-hover:bg-cyan-50">
+                        <item.icon className="h-5 w-5 text-lightblue group-hover:text-darkblue" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
                         <a href={item.href} className="block font-semibold text-darkblue" onClick={closeMobileMenu}>
                           {item.name}
                         </a>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
                       </div>
                     </div>
                   ))}
@@ -112,7 +125,7 @@ export default function Example() {
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <ButtonOut text='Haz una cita' url='#' onClick={closeMobileMenu} />
+          <ButtonOut text='Haz una cita' url='https://provider.kareo.com/madelin-perez-antela' onClick={closeMobileMenu} />
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -161,7 +174,7 @@ export default function Example() {
                 </a>
               </div>
               <div className="py-6">
-                <ButtonOut text='Haz una cita' url='#' onClick={closeMobileMenu} />
+                <ButtonOut text='Haz una cita' url='https://provider.kareo.com/madelin-perez-antela' onClick={closeMobileMenu} />
               </div>
             </div>
           </div>
