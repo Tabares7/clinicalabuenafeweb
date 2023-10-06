@@ -17,8 +17,8 @@ const HomeSection = () => {
       {/* Texto */}
       <div className="mt-16 flex flex-col gap-10">
         {/* //? TITULO  */}
-        <h1 className="text-darkblue text-3xl md:text-5xl lg:text-7xl font-poppins-600 text-center md:text-left">
-          Tu Clínica Familiar de Confianza, <span className="font-poppins-800 text-lightblue">La Buena Fe</span>
+        <h1 className="text-darkblue text-3xl md:text-5xl lg:text-7xl font-poppins-800 text-center md:text-left">
+          Tu Clínica Familiar de Confianza, <span className=" border-b-4 border-yellow text-darkblue">La Buena Fe</span>
 
         </h1>
         {/* //? SUBTITULO  */}
