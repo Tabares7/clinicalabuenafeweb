@@ -169,7 +169,7 @@ export default function Example() {
                 <a href="#about" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50" onClick={closeMobileMenu}>
                   Nosotros
                 </a>
-                <a href="#contacto" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50" onClick={closeMobileMenu}>
+                <a href="#contact" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-darkblue hover:bg-gray-50" onClick={closeMobileMenu}>
                   Contáctanos
                 </a>
               </div>
