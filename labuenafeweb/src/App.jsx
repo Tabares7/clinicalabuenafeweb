@@ -14,6 +14,7 @@ import Contact from './components/Contact'
 import ImgSpacer from './components/ImgSpacer'
 import bgspacer from "./assets/img/bg-spacer-1.png"
 import {BiSolidChevronsUp} from "react-icons/bi"
+import Footer from './components/Footer'
 
 const posts = [
   {
@@ -79,6 +80,7 @@ function App() {
       <AboutSection/>
       <Contact/>
       </div>
+      <Footer/>
     </div>
   )
 }

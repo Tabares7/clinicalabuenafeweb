@@ -20,7 +20,7 @@ const AboutSection = () => {
           {" "}
           En la Clínica Familiar La Buena Fe, nuestra misión es brindar atención
           médica de calidad en un ambiente cálido y acogedor. Con años de
-          experiencia en el campo de la salud, nuesctro equipo de profesionales
+          experiencia en el campo de la salud, nuestro equipo de profesionales
           está dedicado a servir a la comunidad, ofreciendo tratamientos y
           servicios que promueven el bienestar integral de cada paciente.{" "}
         </p>
