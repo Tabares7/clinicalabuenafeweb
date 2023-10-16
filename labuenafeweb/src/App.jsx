@@ -76,7 +76,7 @@ function App() {
       <TeleHealth/>
       <Services/>
       <InsuranceSection/>
-      <BlogSection posts={posts}/>
+      {/* <BlogSection posts={posts}/> */}
       <AboutSection/>
       <Contact/>
       </div>
