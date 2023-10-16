@@ -96,6 +96,12 @@ export default function App() {
               <li>- Enfermedades de la piel.</li>
 
               <li>- Trastornos sexuales.</li>
+
+              <li>- Ansiedad y depresión</li>
+
+              <li>- Panel de alopecia.</li>
+
+              <li>- Panel de PECOS</li>
             </ol>
           </AccordionItem>
           <AccordionItem
@@ -132,7 +138,7 @@ export default function App() {
           <AccordionItem
             className="  text-darkblue"
             key="6"
-            aria-label="Otorrinolaringología"
+            aria-label="Pediatria"
             startContent={<MdOutlineChildCare className="h-8 w-8" />}
             title={
               <h2 className="font-poppins-600 `text-darkblue">Pediatría</h2>
@@ -147,7 +153,7 @@ export default function App() {
           <AccordionItem
             className="  text-darkblue"
             key="7"
-            aria-label="Otorrinolaringología"
+            aria-label="perdidadepeso"
             startContent={<LiaWeightSolid className="h-8 w-8" />}
             title={
               <h2 className="font-poppins-600 `text-darkblue">
@@ -163,9 +169,9 @@ export default function App() {
             </ol>
           </AccordionItem>
           <AccordionItem
-            className="  text-darkblue"
+            className="text-darkblue"
             key="8"
-            aria-label="Otorrinolaringología"
+            aria-label="suerosvitaminados"
             startContent={<GiMedicalDrip className="h-8 w-8" />}
             title={
               <h2 className="font-poppins-600 `text-darkblue">
@@ -178,15 +184,18 @@ export default function App() {
               <li>- Glutatión</li>
               <li>- Altas dosis de vitamina C</li>
               <li>- Todas las vitaminas del complejo B</li>
-              <li>- Tasas de minerales</li>
+              <li>- Trazas de minerales</li>
               <li>- Magnesio</li>
               <li>- Calcio</li>
+              <li>- NAD+</li>
+              <li>- Biotín</li>
+
             </ol>
           </AccordionItem>
           <AccordionItem
             className="  text-darkblue"
             key="9"
-            aria-label="Otorrinolaringología"
+            aria-label="examendelaboratorio"
             startContent={<GiCorkedTube className="h-8 w-8" />}
             title={
               <h2 className="font-poppins-600 `text-darkblue">
@@ -240,7 +249,7 @@ export default function App() {
           <AccordionItem
             className="  text-darkblue"
             key="10"
-            aria-label="Otorrinolaringología"
+            aria-label="vacunacion"
             startContent={<PiSyringe className="h-8 w-8" />}
             title={
               <h2 className="font-poppins-600 `text-darkblue">Vacunación</h2>
@@ -254,18 +263,18 @@ export default function App() {
           <AccordionItem
             className="  text-darkblue"
             key="11"
-            aria-label="Otorrinolaringología"
+            aria-label="cirugiamenor"
             startContent={<GiScalpel className="h-8 w-8" />}
             title={
               <h2 className="font-poppins-600 `text-darkblue">Cirugía Menor</h2>
             }
           >
             <ol className="pl-10 mb-5">
-              <li>- Cauterización de berrugas</li>
+              <li>- Cauterización de verrugas</li>
               <li>- Suturas de heridas</li>
               <li>- Retirar suturas</li>
               <li>- Remover DIU</li>
-              <li>- Remover implantes</li>
+              <li>- Remover implantes hormonales</li>
               <li>- Drenaje de abscesos</li>
             </ol>
           </AccordionItem>

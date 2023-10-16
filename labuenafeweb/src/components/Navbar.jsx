@@ -18,7 +18,7 @@ import { Fragment } from 'react';
 
 
 const products = [
-  { name: 'Otorrinolaringologia', description: 'Conecta con nosotros ya mismo', href: '#services', icon: BsEar },
+  { name: 'Nariz, Garganta y Oídos', description: 'Conecta con nosotros ya mismo', href: '#services', icon: BsEar },
   { name: 'Sueros Vitaminados', description: 'Échale un vistazo a como podemos ayudarte', href: '#services', icon: GiMedicalDrip },
   { name: 'Programa de Perdida de Peso', description: 'Mantente informado con nosotros', href: '#services', icon: LiaWeightSolid },
   { name: 'Laboratorios', description: 'Conece un poco más sobre nosotros', href: '#services', icon: GiCorkedTube },
